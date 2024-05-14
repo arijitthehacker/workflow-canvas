@@ -114,8 +114,10 @@ const initialEdges = [
 ];
 
 const HorizontalFlow = () => {
+  // eslint-disable-next-line no-unused-vars
   const [nodes, _, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onConnect = useCallback((params) => setEdges((els) => addEdge(params, els)), []);
 
   return (
