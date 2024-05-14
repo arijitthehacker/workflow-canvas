@@ -131,7 +131,7 @@ const HorizontalFlow = () => {
       attributionPosition="bottom-left"
     ></ReactFlow>
       
-      <header>Workflow Creator</header>
+      <header className='font-semibold text-xl tracking-tight'>Workflow Creator</header>
       <div style={{ position: 'absolute', top: '50%' }}>
         <div className="flex flex-col items-start gap-y-3 m-10 p-15">
           <label htmlFor="form" className="text-sm font-medium cursor-pointer">
@@ -145,8 +145,9 @@ const HorizontalFlow = () => {
             className="w-full m-20 p-10 bg-transparent border border-gray-200 rounded-lg outline-none "
             style={{ margin: '10px'}}
           />
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" style={{margin: '10px'}}>Submit</button>
         </div>
-        <button type="submit" className="btn btn-primary" style={{margin: '10px'}}>Submit</button>
+        
         </div></>
   );
 };
